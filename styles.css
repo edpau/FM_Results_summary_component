@@ -1,92 +1,208 @@
-
 @font-face {
-    font-family: 'HankenGrotesk';
-    font-display: swap;
-    font-weight: 100 900;
-    src: url('/assets/fonts/HankenGrotesk-VariableFont_wght.ttf')
-            format('truetype');
+  font-family: "HankenGrotesk";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
 }
-
-
-:root {
-    --clr-primary-hsl-400: 252, 100%, 67%;
-    --clr-primary-hsl-500: 256, 72%, 46%;
-    --clr-secondary-hsl-400: 241, 81%, 54%;
-    --clr-secondary-hsl-500: 241, 72%, 46%;
-  
-    --clr-neutral-hsl-100: 0, 0%, 100%;
-    --clr-neutral-hsl-200: 221, 100%, 96%;
-    --clr-neutral-hsl-300: 241, 100%, 89%;
-    --clr-neutral-hsl-700: 224, 30%, 27%;
-  
-    --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
-    --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
-    --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
-    --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
-  
-  
-    --clr-primary-400: hsl(var(--clr-primary-hsl-400));
-    --clr-primary-500: hsla(var(--clr-primary-hsl-500));
-    --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
-  
-    --gradient-primary: linear-gradient(
-        var(--clr-primary-400), 
-        var(--clr-secondary-400));
-  
-    --gradient-to-transparent: linear-gradient(
-        var(--clr-primary-500),
-        hsl(var(--clr-secondary-hsl-500), 0));
-  
-    --clr-accent-1: 0, 100%, 67%;
-    --clr-accent-2: 39, 100%, 56%;
-    --clr-accent-3: 166, 100%, 37%;
-    --clr-accent-4: 234, 85%, 45%;
-  
-    --font-family-default: 'HankenGrotesk', sans-serif;
-  
-    --fw-regular: 500;
-    --fw-bold: 700;
-    --fw-black: 800;
-  
-    --fs-400: 1.125rem;
-    --fs-500: 1.25rem;
-    --fs-600: 1.5rem;
-    --fs-700: 1.75rem;
-    --fs-800: 2rem;
-    --fs-900: 5rem;
-}
-
-
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-body {
-    font-family: var(--font-family-default);
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "HankenGrotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+}
 
+.result {
+  display: grid;
+  grid-template-rows: 1fr 2.5fr 2fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0 0 40px 40px;
+  min-height: 350px;
+}
 
+.result__title {
+  font-size: 1.125rem;
+}
 
+.result__score {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  justify-self: center;
+  align-self: start;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.result__score p {
+  padding-top: 2rem;
+  line-height: 45px;
+}
 
+.result__score span {
+  font-size: 3.4rem;
+  display: block;
+  font-weight: var(--fw-bold);
+  color: hsl(0, 0%, 100%);
+}
 
+.result__score > p {
+  text-align: center;
+}
 
+.result__description {
+  margin: 0 3rem;
+  max-width: 280px;
+  align-self: start;
+  padding: 0.25rem 0.8rem;
+}
 
+.result__description h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: -20rem;
+  display: inline-block;
+  line-height: 3rem;
+}
+.summary {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem;
+}
 
+.summary__title {
+  font-size: 1.125rem;
+  color: black;
+}
 
+.summary__pills {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
 
+.summary__pill {
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  min-width: 100%;
+}
 
+.summary__pill-item {
+  display: flex;
+  vertical-align: center;
+  gap: 0.6rem;
+}
 
+.summary__pill--reaction {
+  color: hsl(0, 100%, 67%);
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
 
+.summary__pill--memory {
+  color: hsl(39, 100%, 56%);
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
 
+.summary__pill--verbal {
+  color: hsl(166, 100%, 37%);
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.summary__pill--visual {
+  color: hsl(234, 85%, 45%);
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.summary__pill-item-score {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%, 0.5);
+}
+
+.summary__pill-item-score span {
+  color: var(--clr-neutral-700);
+}
+
+.continue-btn {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 100vw;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.continue:hover,
+.continue:focus-visible {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    max-height: 410px;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0.5rem 1rem 3rem hsl(224, 30%, 27%, 0.2);
+  }
+
+  .result {
+    border-radius: 40px;
+    grid-template-rows: 1fr 2.3fr 2fr;
+    max-width: 300px;
+    max-height: 410px;
+  }
+
+  .result__score {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .result__description {
+    font-size: 0.9rem;
+    padding: 0.25rem 0rem;
+  }
+
+  .summary {
+    max-height: 410px;
+  }
+
+  .summary__pill {
+    padding: 0.7rem;
+  }
+}
