@@ -145,7 +145,7 @@ body {
 }
 
 .summary__pill-item-score span {
-  color: var(--clr-neutral-700);
+  color: hsl(224, 30%, 27%);
 }
 
 .continue-btn {
@@ -159,8 +159,8 @@ body {
   font-weight: 700;
 }
 
-.continue:hover,
-.continue:focus-visible {
+.continue-btn:hover,
+.continue-btn:focus-visible {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
