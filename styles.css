@@ -22,8 +22,6 @@ html {
 
 body {
   font-family: "HankenGrotesk", sans-serif;
-  padding: 0;
-  margin: 0;
   color: hsl(241, 100%, 89%);
   font-size: 1rem;
 }
@@ -48,9 +46,10 @@ body {
   height: 8.5rem;
   border-radius: 50%;
   background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  /* center the circle in the div */
   justify-self: center;
   align-self: start;
-  text-align: center;
+  /* center the number inside the circle */
   display: flex;
   justify-content: center;
   align-items: center;
