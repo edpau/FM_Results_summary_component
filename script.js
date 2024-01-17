@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const pillItem = document.createElement("div");
       pillItem.className = "summary__pill-item";
 
-      pillItem.innerHTML = `<img src="${item.icon}"/>
+      pillItem.innerHTML = `<img src="${item.icon}" alt="${item.category} icon"/>
       ${item.category}
       `;
       pill.appendChild(pillItem);
