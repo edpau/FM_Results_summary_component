@@ -55,6 +55,7 @@ body {
   align-items: center;
 }
 
+
 .result__score p {
   padding-top: 2rem;
   line-height: 45px;
@@ -63,7 +64,7 @@ body {
 .result__score span {
   font-size: 3.4rem;
   display: block;
-  font-weight: var(--fw-bold);
+  font-weight: 800;
   color: hsl(0, 0%, 100%);
 }
 

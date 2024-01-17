@@ -21,11 +21,11 @@
       <div class="result">
         <h1 class="result__title">Your Result</h1>
         <div class="result__score">
-          <p><span>76</span> of 100</p>
+          <p><span class="result__total-score">76</span> of 100</p>
         </div>
         <div class="result__description">
-          <h2>Great</h2>
-          <p>
+          <h2 class="result__description-title">Great</h2>
+          <p class="result__description-text">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
@@ -33,7 +33,8 @@
       <div class="summary">
         <h2 class="summary__title">Summary</h2>
         <div class="summary__pills">
-        <div class="summary__pill summary__pill--reaction">
+          <!-- Replaced by Dynamically populated content  -->
+        <!-- <div class="summary__pill summary__pill--reaction">
           <div class="summary__pill-item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -139,11 +140,12 @@
             Visual
           </div>
           <div class="summary__pill-item-score"><span>72</span> / 100</div>
+        </div> -->
         </div>
-        </div>
-
         <button class="continue-btn">Continue</button>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL:](https://github.com/edpau/FM_Results_summary_component)
-- [Live Site URL:](https://edpau.github.io/FM_Results_summary_component/)
+- [Solution URL](https://github.com/edpau/FM_Results_summary_component)
+- [Live Site URL](https://edpau.github.io/FM_Results_summary_component/)
 
 ## My process
 
